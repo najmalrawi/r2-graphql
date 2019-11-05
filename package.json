@@ -1,0 +1,9 @@
+{
+  "name": "r2-graphql",
+  "version": "1.0.0",
+  "description": "R2 Retail Research Project | GraphQL Server",
+  "main": "server.ts",
+  "repository": "https://github.com/najmalrawi/r2-graphql",
+  "author": "Muhammadxon Najimov <najmalrawi@gmail.com>",
+  "license": "MIT"
+}
