@@ -1,11 +1,16 @@
-import { default as Users } from "../data-services/users.service"
+import { UsersService } from "../data-services/users.service"
 import { default as Branches } from "../data-services/branches.service"
 import { default as Subscribers } from "../data-services/subscribers.service"
+
+const usersService = new UsersService();
 
 export default {
 	Query: {
 		async users( _, { branchId }) {
-			return -1 === branchId ? Users : Users.filter((user:any) => user.branch === branchId)
+			return await usersService.get(branchId)
+		},
+		async getUser(_, { userId }) {
+			return await usersService.get(null, userId)
 		}
 	},
 	User: {
