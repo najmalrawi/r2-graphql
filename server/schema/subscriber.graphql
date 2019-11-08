@@ -1,0 +1,8 @@
+type Subscriber {
+	pk: Int!
+	number: Int!
+}
+
+type Query {
+	subscribers: [Subscriber!]!
+}
