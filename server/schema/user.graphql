@@ -1,0 +1,12 @@
+type User {
+	pk: Int!
+	branch: Branch!
+	subscriber: Subscriber!
+	password: String!
+	firstname: String!
+	lastname: String!
+}
+
+type Query {
+	users(branchId: Int): [User!]!
+}
