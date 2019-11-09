@@ -1,0 +1,13 @@
+type Project {
+	pk: Int!
+	name: String!
+	type: String!
+	createdAt: String!
+	count: Int!
+	questions: [Question!]
+	requirements: [ProjectRequirement!]
+}
+
+type Query {
+	projects(branchId: Int!, type: Int): [Project!]!
+}

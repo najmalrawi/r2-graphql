@@ -1,0 +1,4 @@
+type QuestionLabel {
+	pk: Int!
+	label: String!
+}

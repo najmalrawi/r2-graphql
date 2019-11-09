@@ -1,0 +1,4 @@
+type QuestionOption {
+	pk: Int!
+	option: String!
+}

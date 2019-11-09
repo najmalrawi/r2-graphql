@@ -1,0 +1,9 @@
+scalar Object
+
+type QuestionColumn {
+	pk: Int!
+	name: String!
+	dataType: String!
+	options: [QuestionOption!]!
+	attributes: Object
+}

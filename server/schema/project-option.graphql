@@ -1,0 +1,5 @@
+type ProjectOption {
+	pk: Int!
+	label: String!
+	count: Int
+}

@@ -1,0 +1,5 @@
+type ProjectRequirement {
+	pk: Int!
+	label: String!
+	options: [ProjectOption!]
+}

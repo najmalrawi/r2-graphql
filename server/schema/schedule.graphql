@@ -1,0 +1,10 @@
+type Schedule {
+	pk: Int!
+	project: Project!
+	completed: Boolean!
+	expire: String
+}
+
+type Query {
+	schedule(userId: Int!, completed: Boolean): [Schedule!]!
+}

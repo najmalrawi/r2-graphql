@@ -1,0 +1,6 @@
+type Question {
+	pk: Int!
+	title: String!
+	labels: [QuestionLabel!]!
+	columns: [QuestionColumn!]!
+}

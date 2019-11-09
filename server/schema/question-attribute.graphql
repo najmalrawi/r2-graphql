@@ -1,0 +1,4 @@
+type QuestionAttribute {
+	name: String!
+	value: String!
+}

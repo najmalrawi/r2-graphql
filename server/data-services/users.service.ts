@@ -14,4 +14,9 @@ export class UsersService {
 		-1 === branchId
 		? Users : Users.filter((user:any) => user.branch === branchId)
 	}
+
+	currentUser() {
+
+		return 1
+	}
 }
